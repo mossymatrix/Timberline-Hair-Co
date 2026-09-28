@@ -570,13 +570,6 @@ footer p {
   flex-grow: 1;
 }
 
-.service-duration {
-  font-size: 0.85rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-}
-
 .services-note {
   margin-top: 3rem;
   background: #e6d3af;
