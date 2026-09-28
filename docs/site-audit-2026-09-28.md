@@ -30,3 +30,26 @@ Baseline: `main` at `0d8217456068c5ba23d9987d7a659d8dc7dcd434`. Restore branch: 
 4. Trial Vagaro privately for four stylists, deposits, calendars, and total cost before a public booking change.
 
 This audit is based on the repository and a desktop inspection of the live page. It does not claim verified mobile behavior, DNS ownership, analytics status, or booking/payment behavior.
+
+## Audit follow-up — 2026-09-28
+
+The draft `site-revamp` branch now contains a dedicated Services page at `services/index.html`; the baseline findings above describe `main` and should not be mistaken for a fresh finding on that draft page. The branch has distinct title/description/canonical tags on Services, while the homepage still has no canonical URL, uses relative social images, has generic stylist image alternatives for Bre, Percy, and Rafael, and retains popup booking links. These belong to the page/SEO and booking phases before launch.
+
+### Setup inventory
+
+| Setting | Recorded status |
+| --- | --- |
+| Hosting | GitHub Pages from `main`; `site-revamp` is a draft branch. |
+| Custom domain | `CNAME` contains `timberlinehair.com`. Registrar, DNS provider, and account owner have not been verified. |
+| Forms | No form handling appears in the repository. Public booking links go to GlossGenius. |
+| Analytics | No analytics tag appears in the checked HTML. Whether analytics or Search Console are configured outside the repository is unverified. |
+
+### Crawl and indexability inventory
+
+- The baseline audit recorded 404 responses for `/robots.txt` and `/sitemap.xml`. Recheck live URLs at launch; the current audit environment could not retrieve the public domain for a fresh confirmation.
+- The draft homepage links to `services/index.html`, `#about`, and the external booking/maps destinations. The Services page links back through `../index.html` and category anchors matching its section IDs. These relative paths support local file review and GitHub Pages deployment.
+- Both HTML pages have a title and meta description. Services has a canonical and absolute Open Graph image; the homepage has the metadata gaps listed above.
+- No `noindex` directive appears in the checked HTML. Actual search engine indexing and Search Console coverage remain unverified.
+- Mobile layout and real booking flow still require hands-on checks before launch.
+
+The technical crawl checklist item is documented. To close the separate setup inventory and parent audit, confirm who controls the domain/DNS and whether Google Search Console or analytics are configured. Those facts cannot be established from the repository.
