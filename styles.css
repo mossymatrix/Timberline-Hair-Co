@@ -281,6 +281,12 @@ header::after {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+}
+
+.logo-inner a {
+  display: block;
+  width: 100%;
 }
 
 .logo-inner img {
@@ -432,30 +438,12 @@ footer p {
   }
 }
 /* Services overview */
-.services-page {
-  font-family: Arial, sans-serif;
-  font-weight: 400;
-}
-
-.services-page .logo-badge {
-  position: relative;
-  top: auto;
-  left: auto;
-  transform: none;
-  width: min(220px, 48vw);
-  margin: 3.5rem auto 1rem;
-}
-
-.services-page .logo-inner a,
-.services-page .logo-inner img {
-  display: block;
-  width: 100%;
-}
-
 .services-main {
   max-width: 1160px;
-  margin: 0 auto;
+  margin: 280px auto 0;
   padding: 0 3rem 5rem;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
 }
 
 .services-intro {
@@ -601,6 +589,7 @@ footer p {
 
 @media (max-width: 768px) {
   .services-main {
+    margin-top: 1.5rem;
     padding: 0 1.5rem 3rem;
   }
 
@@ -608,9 +597,6 @@ footer p {
     grid-template-columns: 1fr;
   }
 
-  .services-page .logo-badge {
-    margin-top: 1.5rem;
-  }
 }
 
 @media (max-width: 480px) {
