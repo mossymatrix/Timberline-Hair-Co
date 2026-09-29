@@ -827,7 +827,6 @@ footer p {
 
 .instagram-post:hover,
 .instagram-post:focus-visible {
-  transform: translateY(-3px);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
 }
 
@@ -874,14 +873,13 @@ footer p {
   }
 }
 
-/* Consistent yellow highlight for inline calls to action */
+/* Match the header phone hover treatment */
 .card-book .booking-phone a,
 .team-preview .stylist-read-more,
 .stylist-instagram,
 .instagram-post > span {
-  border-radius: 3px;
-  box-decoration-break: clone;
-  padding: 0.1em 0.2em;
+  display: inline-block;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .card-book .booking-phone a:hover,
@@ -892,14 +890,14 @@ footer p {
 .stylist-instagram:focus-visible,
 .instagram-post:hover > span,
 .instagram-post:focus-visible > span {
-  background: #d4a017;
-  color: #1a1a1a;
+  color: #d4a017;
+  transform: translateY(-2px);
 }
 
 .card-book .booking-phone a:focus-visible,
 .team-preview .stylist-read-more:focus-visible,
 .stylist-instagram:focus-visible,
 .instagram-post:focus-visible {
-  outline: 2px solid #2f5d3a;
+  outline: 2px solid currentColor;
   outline-offset: 3px;
 }
