@@ -775,7 +775,7 @@ footer p {
   justify-content: center;
   width: 56px;
   height: 56px;
-  color: #f3e9dc;
+  color: #fff;
   transition: color 0.2s ease, transform 0.2s ease;
 }
 
@@ -975,8 +975,22 @@ footer p {
 }
 
 .contact-booking p a {
+  display: inline-block;
   color: #2f5d3a;
-  font-weight: 700;
+  font-weight: 900;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.contact-booking p a:hover,
+.contact-booking p a:focus-visible {
+  color: #d4a017;
+  transform: translateY(-2px);
+}
+
+.contact-booking p a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
 }
 
 .contact-booking .btn {
