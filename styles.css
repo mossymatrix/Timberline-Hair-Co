@@ -772,22 +772,20 @@ footer p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
-  border: 2px solid #f3e9dc;
-  border-radius: 50%;
+  width: 56px;
+  height: 56px;
   color: #f3e9dc;
-  transition: color 0.2s ease, background-color 0.2s ease;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .footer-social a:hover,
 .footer-social a:focus-visible {
-  background: #f3e9dc;
-  color: #2f5d3a;
+  color: #f1c454;
+  transform: translateY(-2px);
 }
 
 .footer-social svg {
   display: block;
-  width: 23px;
-  height: 23px;
+  width: 36px;
+  height: 36px;
 }
