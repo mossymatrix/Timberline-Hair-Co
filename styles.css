@@ -746,3 +746,30 @@ footer p {
     margin-top: 1.5rem;
   }
 }
+
+.stylist-instagram {
+  align-self: flex-start;
+  color: #2f5d3a;
+  font-weight: 700;
+  margin-top: 1rem;
+  text-underline-offset: 0.2em;
+}
+
+.stylist-instagram:hover,
+.stylist-instagram:focus-visible {
+  color: #9a400d;
+}
+
+footer .footer-instagram {
+  margin: 1rem 0 0;
+}
+
+footer .footer-instagram a {
+  color: #f3e9dc;
+  text-underline-offset: 0.2em;
+}
+
+footer .footer-instagram a:hover,
+footer .footer-instagram a:focus-visible {
+  color: #f1c454;
+}
