@@ -649,6 +649,12 @@ footer p {
   margin-top: 0.75rem;
 }
 
+.team-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
 .stylists-page footer a {
   color: inherit;
 }
