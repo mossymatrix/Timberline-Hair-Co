@@ -1187,7 +1187,7 @@ footer .footer-phone a:focus-visible {
     justify-content: space-between;
   }
 
-  .mobile-header:has(.mobile-menu:first-child) {
+  .mobile-header-booking {
     justify-content: flex-end;
   }
 
