@@ -68,6 +68,23 @@ header {
   gap: 20px;
 }
 
+.right-nav .header-book-btn {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.right-nav .header-book-btn:hover,
+.right-nav .header-book-btn:focus-visible {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.right-nav .header-book-btn.current-page {
+  background: #d4a017;
+  color: #1a1a1a;
+  cursor: default;
+}
+
 /* Retro stripe under header */
 header::after {
   content: "";
