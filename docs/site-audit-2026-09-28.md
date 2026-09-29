@@ -40,16 +40,16 @@ The draft `site-revamp` branch now contains a dedicated Services page at `servic
 | Setting | Recorded status |
 | --- | --- |
 | Hosting | GitHub Pages from `main`; `site-revamp` is a draft branch. |
-| Custom domain | `CNAME` contains `timberlinehair.com`. Registrar, DNS provider, and account owner have not been verified. |
+| Custom domain | `CNAME` contains `timberlinehair.com`. Owner reports DNS is managed in GoDaddy. Registrar and account ownership were not independently verified. |
 | Forms | No form handling appears in the repository. Public booking links go to GlossGenius. |
-| Analytics | No analytics tag appears in the checked HTML. Whether analytics or Search Console are configured outside the repository is unverified. |
+| Analytics | No analytics tag appears in the checked HTML. Owner has Google Search Console data for the site. Separate analytics installation or account remains unverified. |
 
 ### Crawl and indexability inventory
 
 - The baseline audit recorded 404 responses for `/robots.txt` and `/sitemap.xml`. Recheck live URLs at launch; the current audit environment could not retrieve the public domain for a fresh confirmation.
 - The draft homepage links to `services/index.html`, `#about`, and the external booking/maps destinations. The Services page links back through `../index.html` and category anchors matching its section IDs. These relative paths support local file review and GitHub Pages deployment.
 - Both HTML pages have a title and meta description. Services has a canonical and absolute Open Graph image; the homepage has the metadata gaps listed above.
-- No `noindex` directive appears in the checked HTML. Actual search engine indexing and Search Console coverage remain unverified.
+- No `noindex` directive appears in the checked HTML. Owner reports Search Console data is available; specific coverage and indexing results have not yet been reviewed.
 - Mobile layout and real booking flow still require hands-on checks before launch.
 
-The technical crawl checklist item is documented. To close the separate setup inventory and parent audit, confirm who controls the domain/DNS and whether Google Search Console or analytics are configured. Those facts cannot be established from the repository.
+The technical crawl and setup inventory are documented. Owner confirmed GoDaddy DNS management and access to Search Console data on 2026-09-28. Separate analytics status and specific Search Console coverage remain follow-up SEO checks; mobile and booking verification remain launch checks.
