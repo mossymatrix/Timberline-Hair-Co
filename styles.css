@@ -520,6 +520,10 @@ footer p {
   line-height: 1.6;
 }
 
+.book-main .services-intro p:not(.eyebrow) {
+  margin-bottom: auto;
+}
+
 .service-nav {
   display: flex;
   flex-wrap: wrap;
