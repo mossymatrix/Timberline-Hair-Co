@@ -679,3 +679,20 @@ footer p {
     margin-top: 1rem;
   }
 }
+
+.team-preview .stylist-read-more {
+  color: #2f5d3a;
+  font-weight: 900;
+  margin-top: 1rem;
+  text-align: left;
+  text-underline-offset: 0.2em;
+}
+
+.team-preview .stylist-read-more:hover,
+.team-preview .stylist-read-more:focus-visible {
+  color: #9a400d;
+}
+
+.stylists-main .stylist {
+  scroll-margin-top: 1.5rem;
+}
