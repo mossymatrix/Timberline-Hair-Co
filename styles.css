@@ -237,7 +237,7 @@ header::after {
   overflow: hidden;
 }
 
-.stylist:hover {
+.team-preview .stylist:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
 }
 
