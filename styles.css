@@ -236,6 +236,7 @@ header::after {
 }
 
 .about h2 {
+  color: #2f5d3a;
   font-size: clamp(2rem, 4vw, 3rem);
   margin-bottom: 3rem;
   margin-top: 0;
