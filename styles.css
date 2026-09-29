@@ -541,12 +541,15 @@ footer p {
   text-decoration: none;
   font-family: "realistncs-black", sans-serif;
   font-weight: 900;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 .service-nav a:hover,
 .service-nav a:focus-visible {
   background: #2f5d3a;
   color: #fff;
+  transform: scale(1.05);
 }
 
 .service-group {
