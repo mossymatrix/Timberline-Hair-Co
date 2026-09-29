@@ -137,7 +137,6 @@ header::after {
 
 .btn-dark:hover {
   background: #244a2e;
-  transform: scale(1.05);
 }
 
 .btn-gold {
@@ -147,7 +146,6 @@ header::after {
 
 .btn-gold:hover {
   background: #b89414;
-  transform: scale(1.05);
 }
 
 .hero {
@@ -305,13 +303,6 @@ header::after {
   flex-grow: 1;
 }
 
-/* Center the 3rd card */
-/* .stylist:last-child {
-  grid-column: 1 / -1;
-  justify-self: center;
-  width: min(100%, 535px);
-} */
-
 .logo-badge {
   position: absolute;
   top: 20px;
@@ -376,34 +367,6 @@ footer p {
     display: none;
   }
 
-  .left-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.75rem 1.25rem;
-    width: 100%;
-    margin-bottom: 0.75rem;
-  }
-
-  .left-nav a,
-  .left-nav .current-page {
-    display: inline-block;
-    font-size: 16px;
-  }
-
-  .right-nav {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  .right-nav a,
-  .right-nav .current-page {
-    margin-right: 0;
-    font-size: 16px;
-  }
-
   .logo-badge {
     margin-top: 1.5rem;
     width: 80%;
@@ -418,7 +381,6 @@ footer p {
   }
 
   .hero img {
-    height: auto;
     border-radius: 20px;
   }
 
@@ -439,11 +401,6 @@ footer p {
     gap: 1.5rem;
   }
 
-  /* .stylist:last-child {
-    grid-column: auto;
-    justify-self: stretch;
-    width: 100%;
-  } */
 }
 
 @media (max-width: 480px) {
@@ -481,9 +438,6 @@ footer p {
     margin-bottom: 1.5rem;
   }
 
-  .stylists {
-    gap: 1.5rem;
-  }
 }
 /* Services overview */
 .services-main {
@@ -687,10 +641,6 @@ footer p {
   padding: 3rem 0 0;
 }
 
-.stylists-main .stylist {
-  background: #fffaf3;
-}
-
 .stylists-main .stylist-text {
   padding: 1.5rem;
 }
@@ -699,26 +649,8 @@ footer p {
   margin-top: 0.75rem;
 }
 
-.team-actions {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 3rem;
-}
-
 .stylists-page footer a {
   color: inherit;
-}
-
-@media (max-width: 480px) {
-  .team-actions {
-    display: block;
-  }
-
-  .team-actions .btn + .btn {
-    margin-top: 1rem;
-  }
 }
 
 .team-preview .stylist-read-more {
@@ -728,11 +660,6 @@ footer p {
   margin-top: 1rem;
   text-align: left;
   text-decoration: none;
-}
-
-.team-preview .stylist-read-more:hover,
-.team-preview .stylist-read-more:focus-visible {
-  color: #1a1a1a;
 }
 
 .stylists-main .stylist {
@@ -785,11 +712,6 @@ footer p {
   font-weight: 700;
   margin-top: 1rem;
   text-decoration: none;
-}
-
-.stylist-instagram:hover,
-.stylist-instagram:focus-visible {
-  color: #1a1a1a;
 }
 
 
