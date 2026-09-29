@@ -1162,3 +1162,113 @@ footer .footer-phone a:focus-visible {
     display: inline-block;
   }
 }
+
+/* Compact mobile navigation */
+.mobile-header {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  header {
+    position: relative;
+    z-index: 20;
+    padding: 1rem 1.5rem;
+  }
+
+  header > .left-nav,
+  header > .right-nav {
+    display: none;
+  }
+
+  .mobile-header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mobile-header:has(.mobile-menu:first-child) {
+    justify-content: flex-end;
+  }
+
+  .mobile-book-btn {
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  .mobile-menu summary {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    color: #fff;
+    font-family: "realistncs-black", sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .mobile-menu summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .mobile-menu summary:focus-visible,
+  .mobile-menu nav a:focus-visible {
+    outline: 2px solid #d4a017;
+    outline-offset: 4px;
+  }
+
+  .menu-icon {
+    display: flex;
+    width: 22px;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .menu-icon span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: currentColor;
+    border-radius: 2px;
+  }
+
+  .mobile-menu nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: min(230px, 100vw);
+    padding: 1.25rem 1.5rem;
+    background: #000;
+    border-radius: 0 0 0 18px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-sizing: border-box;
+  }
+
+  .mobile-menu nav a,
+  .mobile-menu nav .current-page {
+    color: #fff;
+    font-family: "realistncs-black", sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    text-decoration: none;
+  }
+
+  .mobile-menu nav .current-page {
+    color: #d4a017;
+    cursor: default;
+  }
+
+  .mobile-menu nav a {
+    transition: color 0.2s ease, transform 0.2s ease;
+  }
+
+  .mobile-menu nav a:hover,
+  .mobile-menu nav a:focus-visible {
+    color: #d4a017;
+    transform: translateY(-2px);
+  }
+}
