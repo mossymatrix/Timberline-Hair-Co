@@ -1020,3 +1020,26 @@ footer p {
     padding: 1.5rem;
   }
 }
+
+.footer-phone {
+  margin-bottom: 0;
+}
+
+footer .footer-phone a {
+  display: inline-block;
+  color: #fff;
+  font-weight: 900;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+footer .footer-phone a:hover,
+footer .footer-phone a:focus-visible {
+  color: #d4a017;
+  transform: translateY(-2px);
+}
+
+footer .footer-phone a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
