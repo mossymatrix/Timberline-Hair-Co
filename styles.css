@@ -35,7 +35,8 @@ header {
 
 .left-nav a,
 .left-nav .current-page,
-.right-nav a {
+.right-nav a,
+.right-nav .current-page {
   color: white;
   text-decoration: none;
   font-size: 18px;
@@ -48,7 +49,8 @@ header {
   gap: 1.25rem;
 }
 
-.left-nav .current-page {
+.left-nav .current-page,
+.right-nav .current-page {
   color: #d4a017;
   font-weight: 900;
   cursor: default;
@@ -1042,4 +1044,92 @@ footer .footer-phone a:focus-visible {
 footer .footer-phone a:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 3px;
+}
+
+/* Branded booking gateway */
+.book-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.book-option {
+  background: #fffaf3;
+  border: 1px solid #d9cabb;
+  border-radius: 25px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.book-option h2 {
+  color: #2f5d3a;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  margin: 0 0 1rem;
+}
+
+.book-option p {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.book-option .btn,
+.book-option .book-phone {
+  margin-top: auto;
+}
+
+.book-phone,
+.book-help a {
+  display: inline-block;
+  color: #2f5d3a;
+  font-weight: 900;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.book-phone {
+  font-size: 1.35rem;
+}
+
+.book-phone:hover,
+.book-phone:focus-visible,
+.book-help a:hover,
+.book-help a:focus-visible {
+  color: #d4a017;
+  transform: translateY(-2px);
+}
+
+.book-phone:focus-visible,
+.book-help a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+.book-help {
+  margin-top: 2rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.book-page footer a {
+  color: inherit;
+}
+
+@media (max-width: 768px) {
+  .book-options {
+    grid-template-columns: 1fr;
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .book-option {
+    padding: 1.5rem;
+  }
+
+  .book-option .btn {
+    display: inline-block;
+  }
 }
