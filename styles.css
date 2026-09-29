@@ -172,7 +172,7 @@ header::after {
 }
 
 .card {
-  background: #efe6d8;
+  background: #fffaf3;
   border-radius: 30px;
   padding: 20px;
   display: flex;
@@ -227,7 +227,7 @@ header::after {
 }
 
 .stylist {
-  background: transparent;
+  background: #fffaf3;
   border-radius: 30px;
   display: flex;
   flex-direction: column;
