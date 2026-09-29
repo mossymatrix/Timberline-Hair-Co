@@ -814,25 +814,36 @@ footer p {
 }
 
 .instagram-post {
+  display: block;
   min-width: 0;
   background: #fffaf3;
   border-radius: 20px;
   padding: 0.75rem 0.75rem 1rem;
+  color: #2f5d3a;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.instagram-post iframe {
+.instagram-post:hover,
+.instagram-post:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+.instagram-post img {
   display: block;
   width: 100%;
-  height: 500px;
-  border: 0;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
   border-radius: 12px;
-  background: #fff;
 }
 
-.instagram-post a {
+.instagram-post > span {
   display: inline-block;
-  color: #2f5d3a;
   margin-top: 0.75rem;
+  font-weight: 700;
+  text-decoration: underline;
   text-underline-offset: 0.2em;
 }
 
