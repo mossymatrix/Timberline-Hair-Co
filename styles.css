@@ -628,3 +628,54 @@ footer p {
     scroll-behavior: auto;
   }
 }
+
+/* Team overview and full biographies */
+.team-preview .stylist {
+  min-height: 0;
+}
+
+.team-preview .stylist-text {
+  text-align: left;
+}
+
+.team-more {
+  margin-top: 2rem;
+}
+
+.stylists-main .team-details {
+  padding: 3rem 0 0;
+}
+
+.stylists-main .stylist {
+  background: #fffaf3;
+}
+
+.stylists-main .stylist-text {
+  padding: 1.5rem;
+}
+
+.stylists-main .stylist p + p {
+  margin-top: 0.75rem;
+}
+
+.team-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.stylists-page footer a {
+  color: inherit;
+}
+
+@media (max-width: 480px) {
+  .team-actions {
+    display: block;
+  }
+
+  .team-actions .btn + .btn {
+    margin-top: 1rem;
+  }
+}
