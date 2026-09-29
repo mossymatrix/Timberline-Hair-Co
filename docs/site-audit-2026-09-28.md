@@ -53,3 +53,21 @@ The draft `site-revamp` branch now contains a dedicated Services page at `servic
 - Mobile layout and real booking flow still require hands-on checks before launch.
 
 The technical crawl and setup inventory are documented. Owner confirmed GoDaddy DNS management and access to Search Console data on 2026-09-28. Separate analytics status and specific Search Console coverage remain follow-up SEO checks; mobile and booking verification remain launch checks.
+
+## Search Console baseline — export received 2026-09-28
+
+Source: owner-supplied Performance-on-Search export, Web search, last three months, daily chart from 2026-06-27 through 2026-09-25. This is pre-revamp performance for the published site.
+
+| Metric | Baseline |
+| --- | ---: |
+| Search clicks | 221 |
+| Search impressions | 2,697 |
+| Overall click-through rate | 8.19% |
+| Mobile clicks / impressions | 164 / 1,221 |
+| Desktop clicks / impressions | 56 / 1,465 |
+
+The branded queries `timberline hair company` (59 clicks), `timberline hair` (21), `timberline barber shop` (5), and `timberline salon` (3) account for 88 of the 100 clicks attributed to exported query rows. Query rows total only 100 clicks and 1,273 impressions, less than the chart totals; do not calculate an exact sitewide branded share from them. Nonbranded Portland haircut queries have little traffic so far. Keep barber and haircut terminology where the actual services support it, while expanding content to reflect color, curly cuts, and other services.
+
+The Pages tab lists `http://www.timberlinehair.com/` (118 clicks, 1,574 impressions) and `https://timberlinehair.com/` (105 clicks, 1,611 impressions). These page totals need not equal chart totals because Search Console aggregates report dimensions differently. Inspect the two URLs in Search Console and verify HTTP/www redirects and Google's selected canonical before launch; add the intended canonical URL in homepage metadata. The export alone does not prove a redirect failure.
+
+Next checks: obtain the Page indexing report and inspect excluded or duplicate URLs; after launching focused pages, submit the sitemap and compare the same search report over a longer period. Search Console measures Google search visibility and clicks, not bookings or all visits.
