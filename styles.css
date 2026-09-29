@@ -760,16 +760,20 @@ footer p {
   color: #9a400d;
 }
 
-footer .footer-instagram {
+footer .footer-instagram,
+footer .footer-facebook {
   margin: 1rem 0 0;
 }
 
-footer .footer-instagram a {
+footer .footer-instagram a,
+footer .footer-facebook a {
   color: #f3e9dc;
   text-underline-offset: 0.2em;
 }
 
 footer .footer-instagram a:hover,
-footer .footer-instagram a:focus-visible {
+footer .footer-instagram a:focus-visible,
+footer .footer-facebook a:hover,
+footer .footer-facebook a:focus-visible {
   color: #f1c454;
 }
