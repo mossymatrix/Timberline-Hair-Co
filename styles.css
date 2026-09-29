@@ -695,12 +695,12 @@ footer p {
   font-weight: 900;
   margin-top: 1rem;
   text-align: left;
-  text-underline-offset: 0.2em;
+  text-decoration: none;
 }
 
 .team-preview .stylist-read-more:hover,
 .team-preview .stylist-read-more:focus-visible {
-  color: #9a400d;
+  color: #1a1a1a;
 }
 
 .stylists-main .stylist {
@@ -752,12 +752,12 @@ footer p {
   color: #2f5d3a;
   font-weight: 700;
   margin-top: 1rem;
-  text-underline-offset: 0.2em;
+  text-decoration: none;
 }
 
 .stylist-instagram:hover,
 .stylist-instagram:focus-visible {
-  color: #9a400d;
+  color: #1a1a1a;
 }
 
 
@@ -843,8 +843,7 @@ footer p {
   display: inline-block;
   margin-top: 0.75rem;
   font-weight: 700;
-  text-decoration: underline;
-  text-underline-offset: 0.2em;
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -864,11 +863,42 @@ footer p {
 
 .card-book .booking-phone a {
   color: #2f5d3a;
-  text-underline-offset: 0.2em;
+  font-weight: 900;
+  text-decoration: none;
 }
 
 @media (max-width: 480px) {
   .instagram-feature {
     padding-bottom: 1.5rem;
   }
+}
+
+/* Consistent yellow highlight for inline calls to action */
+.card-book .booking-phone a,
+.team-preview .stylist-read-more,
+.stylist-instagram,
+.instagram-post > span {
+  border-radius: 3px;
+  box-decoration-break: clone;
+  padding: 0.1em 0.2em;
+}
+
+.card-book .booking-phone a:hover,
+.card-book .booking-phone a:focus-visible,
+.team-preview .stylist-read-more:hover,
+.team-preview .stylist-read-more:focus-visible,
+.stylist-instagram:hover,
+.stylist-instagram:focus-visible,
+.instagram-post:hover > span,
+.instagram-post:focus-visible > span {
+  background: #d4a017;
+  color: #1a1a1a;
+}
+
+.card-book .booking-phone a:focus-visible,
+.team-preview .stylist-read-more:focus-visible,
+.stylist-instagram:focus-visible,
+.instagram-post:focus-visible {
+  outline: 2px solid #2f5d3a;
+  outline-offset: 3px;
 }
