@@ -1224,9 +1224,21 @@ footer .footer-phone a:focus-visible {
   grid-column: 1 / -1;
 }
 
-/* Give the embedded scheduler the full booking-page width. */
+/* Center a compact booking card around Vagaro’s narrow scheduler. */
 .book-main .book-options {
   grid-template-columns: minmax(0, 1fr);
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.book-online {
+  align-items: center;
+}
+
+.book-online > h2,
+.book-online > p {
+  text-align: center;
 }
 
 .book-online {
@@ -1234,7 +1246,7 @@ footer .footer-phone a:focus-visible {
 }
 
 .book-main .vagaro {
-  width: 100%;
+  width: 250px;
   max-width: 100%;
   padding: 0;
   border: 0;
