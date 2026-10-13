@@ -1223,3 +1223,35 @@ footer .footer-phone a:focus-visible {
 #curly .service-item {
   grid-column: 1 / -1;
 }
+
+/* Give the embedded scheduler the full booking-page width. */
+.book-main .book-options {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.book-online {
+  min-width: 0;
+}
+
+.book-main .vagaro {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  border: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.book-main .vagaro a {
+  font-size: 14px;
+  color: #6c4f3a;
+  text-decoration: underline;
+}
+
+.book-main .vagaro iframe {
+  max-width: 100%;
+}
+
+.book-online > p a {
+  color: #2f5d3a;
+}
