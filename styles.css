@@ -1236,7 +1236,6 @@ footer .footer-phone a:focus-visible {
 .book-online {
   min-width: 0;
   align-items: center;
-  border-top: 6px solid #d4a017;
 }
 
 .book-online > h2,
