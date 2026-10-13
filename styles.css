@@ -1224,16 +1224,19 @@ footer .footer-phone a:focus-visible {
   grid-column: 1 / -1;
 }
 
-/* Center a compact booking card around Vagaro’s narrow scheduler. */
-.book-main .book-options {
-  grid-template-columns: minmax(0, 1fr);
-  max-width: 560px;
-  margin-left: auto;
-  margin-right: auto;
+/* Booking: a focused scheduler beside contact details and policies. */
+.booking-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 380px) minmax(0, 1fr);
+  align-items: start;
+  gap: 2rem;
+  margin-top: 3rem;
 }
 
 .book-online {
+  min-width: 0;
   align-items: center;
+  border-top: 6px solid #d4a017;
 }
 
 .book-online > h2,
@@ -1241,8 +1244,11 @@ footer .footer-phone a:focus-visible {
   text-align: center;
 }
 
-.book-online {
-  min-width: 0;
+.book-online #frameTitle {
+  color: #2f5d3a;
+  font-family: "fatfrank", sans-serif;
+  font-weight: 400;
+  line-height: 1.1;
 }
 
 .book-main .vagaro {
@@ -1252,18 +1258,60 @@ footer .footer-phone a:focus-visible {
   border: 0;
   margin: 0 auto;
   text-align: center;
+  font-family: Arial, sans-serif;
 }
 
 .book-main .vagaro a {
-  font-size: 14px;
+  font-size: 0.8rem;
   color: #6c4f3a;
   text-decoration: underline;
 }
 
 .book-main .vagaro iframe {
   max-width: 100%;
+  border: 0;
 }
 
 .book-online > p a {
   color: #2f5d3a;
+}
+
+.booking-information {
+  display: grid;
+  gap: 1.5rem;
+  min-width: 0;
+}
+
+.booking-information .services-note {
+  margin-top: 0;
+  background: #fffaf3;
+  border: 1px solid #d9cabb;
+}
+
+.booking-information .book-option {
+  background: #e6d3af;
+}
+
+.booking-information h2 {
+  font-size: clamp(1.65rem, 3vw, 2.2rem);
+}
+
+.booking-information li + li {
+  margin-top: 0.75rem;
+}
+
+.booking-information ul {
+  padding-left: 1.25rem;
+}
+
+.booking-information section {
+  scroll-margin-top: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .booking-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
 }
