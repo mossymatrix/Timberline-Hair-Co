@@ -1218,3 +1218,8 @@ footer .footer-phone a:focus-visible {
   white-space: nowrap;
   border: 0;
 }
+
+/* The single curly-cut service spans the full service grid. */
+#curly .service-item {
+  grid-column: 1 / -1;
+}
