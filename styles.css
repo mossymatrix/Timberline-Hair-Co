@@ -1291,8 +1291,19 @@ footer .footer-phone a:focus-visible {
   background: #e6d3af;
 }
 
-.booking-information h2 {
+.booking-information h2,
+.book-online #frameTitle {
   font-size: clamp(1.65rem, 3vw, 2.2rem);
+}
+
+.booking-information .book-option {
+  gap: 1rem;
+}
+
+.booking-information .book-option h2,
+.booking-information .book-option p,
+.booking-information .book-option .book-phone {
+  margin: 0;
 }
 
 .booking-information li + li {
