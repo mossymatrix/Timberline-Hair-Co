@@ -71,13 +71,13 @@ header {
 }
 
 .right-nav .header-book-btn {
-  color: #fff;
+  color: #1a1a1a;
   font-size: 1rem;
 }
 
 .right-nav .header-book-btn:hover,
 .right-nav .header-book-btn:focus-visible {
-  color: #fff;
+  color: #1a1a1a;
   transform: scale(1.05);
 }
 
@@ -114,7 +114,7 @@ header::after {
 
 .btn {
   background: #e66a1f;
-  color: white;
+  color: #1a1a1a;
   font-family: "realistncs-black", sans-serif;
   font-size: 1rem;
   font-weight: 900;
@@ -129,11 +129,12 @@ header::after {
 }
 
 .btn:hover {
-  background: #c55a1a;
+  background: #f17b2f;
   transform: scale(1.05);
 }
 
 .btn-dark {
+  color: #fff;
   background: #2f5d3a;
 }
 
@@ -143,7 +144,7 @@ header::after {
 
 .btn-gold {
   background: #d4a017;
-  color: white;
+  color: #1a1a1a;
 }
 
 .btn-gold:hover {
