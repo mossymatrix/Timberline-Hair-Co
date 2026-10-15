@@ -1327,3 +1327,28 @@ footer .footer-phone a:focus-visible {
     margin-top: 1.5rem;
   }
 }
+
+/* Keyboard navigation across all pages. */
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: 0.5rem;
+  transform: translateY(-200%);
+  z-index: 100;
+  background: #fffaf3;
+  color: #2f5d3a;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+}
+
+.skip-link:focus {
+  transform: none;
+}
+
+a:focus-visible,
+summary:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 4px;
+}
