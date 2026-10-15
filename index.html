@@ -3,26 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Timberline Hair Company offers professional haircuts, styling, and beard grooming in Portland, OR. Classic cuts, modern fades, and retro styles with old-school service." />
-  <meta name="keywords" content="haircuts, barbershop, Portland, Oregon, beard trim, men's grooming, styling, fades" />
+  <meta name="description" content="Timberline Hair Company is a Portland hair salon offering haircuts, curly cuts, color, blonding, beard grooming, and styling. Meet the team and book your visit." />
   <meta name="author" content="Timberline Hair Company" />
   <meta name="theme-color" content="#000000ff" />
   
   <!-- Open Graph / Social Media -->
   <meta property="og:type" content="business.business" />
-  <meta property="og:title" content="Timberline Hair Company - Professional Haircuts in Portland Oregon" />
-  <meta property="og:description" content="Style and cuts with a Timberline touch. Where quality haircuts and styles meet old-school service." />
-  <meta property="og:image" content="assets/logo.png" />
-  <meta property="og:url" content="https://timberlinehair.com" />
+  <meta property="og:title" content="Timberline Hair Company | Portland Hair Salon" />
+  <meta property="og:description" content="Haircuts, curly hair, color, blonding, and grooming in Portland, Oregon." />
+  <meta property="og:image" content="https://timberlinehair.com/assets/logo.png" />
+  <meta property="og:url" content="https://timberlinehair.com/" />
   
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Timberline Hair Company - Professional Haircuts & Grooming" />
-  <meta name="twitter:description" content="Classic cuts, modern fades, and retro styles in Portland, OR." />
-  <meta name="twitter:image" content="assets/logo.png" />
+  <meta name="twitter:title" content="Timberline Hair Company | Portland Hair Salon" />
+  <meta name="twitter:description" content="Haircuts, curly hair, color, blonding, and grooming in Portland, Oregon." />
+  <meta name="twitter:image" content="https://timberlinehair.com/assets/logo.png" />
   
-  <title>Timberline Hair Company | Portland Oregon Haircuts & Grooming</title>
+  <title>Hair Salon in Portland, OR | Timberline Hair Company</title>
+  <link rel="canonical" href="https://timberlinehair.com/" />
   <link rel="icon" type="image/png" href="assets/icon.png" />
+  <link rel="preconnect" href="https://use.typekit.net" crossorigin />
+  <link rel="preconnect" href="https://p.typekit.net" crossorigin />
   <link rel="stylesheet" href="https://use.typekit.net/xqb8tqh.css">
   <link rel="stylesheet" href="styles.css" />
   
@@ -30,10 +32,10 @@
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
+      "@type": "HairSalon",
       "name": "Timberline Hair Company",
-      "image": "assets/logo.png",
-      "description": "Professional haircuts, styling, and beard grooming in Portland, OR",
+      "image": "https://timberlinehair.com/assets/hero-storefront.webp",
+      "description": "Haircuts, curly cuts, color, blonding, styling, and beard grooming in Portland, Oregon",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "134 NW 21st Ave",
@@ -42,129 +44,261 @@
         "postalCode": "97209",
         "addressCountry": "US"
       },
-      "telephone": "971-803-7563",
-      "url": "https://timberlinehair.com",
+      "telephone": "+1-971-803-7563",
+      "url": "https://timberlinehair.com/",
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "dayOfWeek": [
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
           "opens": "10:00",
           "closes": "18:00"
         },
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Sunday", "Monday"],
-          "opens": "00:00",
-          "closes": "00:00"
+          "dayOfWeek": "Sunday",
+          "opens": "11:00",
+          "closes": "16:00"
         }
       ],
-      "priceRange": "$20-$50"
+      "@id": "https://timberlinehair.com/#salon",
+      "logo": "https://timberlinehair.com/assets/logo.png",
+      "sameAs": [
+        "https://www.instagram.com/timberlinehaircompany/",
+        "https://www.facebook.com/share/1EwiTXxAgz/"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Salon services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cuts & Styling",
+              "url": "https://timberlinehair.com/services/#cuts"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Curly Hair",
+              "url": "https://timberlinehair.com/services/#curly"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Color & Blonding",
+              "url": "https://timberlinehair.com/services/#color"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Beards & Straight Razor",
+              "url": "https://timberlinehair.com/services/#grooming"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Treatments & Extras",
+              "url": "https://timberlinehair.com/services/#extras"
+            }
+          }
+        ]
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 45.5242136,
+        "longitude": -122.6966864
+      }
     }
   </script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <header>
-    <nav class="left-nav">
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
+    <nav class="left-nav" aria-label="Main navigation">
+      <span class="current-page" aria-current="page">Home</span>
+      <a href="services/">Services</a>
+      <a href="stylists/">Stylists</a>
+      <a href="contact/">Contact</a>
     </nav>
     <div class="right-nav">
       <a href="tel:971-803-7563">971-803-7563</a>
+      <a class="btn header-book-btn" href="book/">Book Now</a>
+
+    </div>
+      <div class="mobile-header">
+      <a class="btn mobile-book-btn" href="book/">Book Now</a>
+      <details class="mobile-menu">
+        <summary aria-label="Navigation menu"><span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span></summary>
+        <nav aria-label="Mobile navigation">
+        <span class="current-page" aria-current="page">Home</span>
+        <a href="services/">Services</a>
+        <a href="stylists/">Stylists</a>
+        <a href="contact/">Contact</a>
+        <a href="book/">Book</a>
+        <a href="tel:971-803-7563">971-803-7563</a>
+        </nav>
+      </details>
     </div>
   </header>
 
   <!-- Logo Badge -->
   <div class="logo-badge">
     <div class="logo-inner">
-      <img src="assets/logo.png" alt="Timberline Hair Company Logo" />
+      <a href="./" aria-label="Timberline Hair Company home"><img src="assets/logo.png" alt="" width="600" height="314" decoding="async" /></a>
     </div>
   </div>
 
+  <main id="main-content" tabindex="-1">
   <section class="hero">
     <div>
       <h1>PREMIUM HAIRCUTS & STYLING IN PORTLAND, OR</h1>
-      <p>With over 30 years of combined experience in hairdressing and grooming. We bring a unique blend of classic techniques and modern trends to every cut and style.</p>
-      <a href="https://timberlinehaircompany.glossgenius.com/booking-flow" target="popup" onclick="window.open('https://timberlinehaircompany.glossgenius.com/booking-flow','Book an Appointment with Timberline Hair Company','width=600,height=400')" class="btn">Book Appointment</a>
+      <p>With over 30 years of combined experience in hairdressing and grooming, we bring a unique blend of classic techniques and modern trends to every cut and style.</p>
+      <a href="book/" class="btn">Book Appointment</a>
     </div>
-    <img src="assets/temp-pic.jpg" alt="Barber">
+    <img src="assets/hero-storefront.webp" alt="The Timberline Hair Company team outside the Portland salon" width="1200" height="800" fetchpriority="high" decoding="async">
   </section>
 
   <section class="features" id="services">
+    <h2 class="sr-only">Visit, Services &amp; Booking</h2>
     <div class="feature-container">
       <div class="cards">
-
-        <div class="card card-services">
-          <div>
-            <h3>Our Services</h3>
-            <p><strong>Haircut</strong> – $35+</p>
-            <p><strong>Shampoo and Style</strong> – $45+</p>
-            <p><strong>Beard Trim</strong> – $20</p>
-          </div>
-          <a class="btn" href="https://timberlinehaircompany.glossgenius.com/services" target="popup" onclick="window.open('https://timberlinehaircompany.glossgenius.com/services','Book an Appointment with Timberline Hair Company','width=600,height=400')">View All Services</a>
-        </div>
-
-        <div class="card card-book">
-          <div>
-            <h3>Book Appointment</h3>
-            <p>Easily schedule your next visit online.</p>
-          </div>
-          <a class="btn btn-dark" href="https://timberlinehaircompany.glossgenius.com/booking-flow" target="popup" onclick="window.open('https://timberlinehaircompany.glossgenius.com/booking-flow','Book an Appointment with Timberline Hair Company','width=600,height=400')">Book Now</a>
-        </div>
 
         <div class="card card-visit">
           <div>
             <h3>Visit Us</h3>
             <p>134 NW 21st Ave, Portland, OR 97209</p>
             <p>Tue–Sat: 10am–6pm</p>
-            <p>Sun–Mon: Closed</p>
+            <p>Sun: 11am–4pm</p>
+            <p>Mon: Closed</p>
           </div>
           <a href="https://www.google.com/maps/dir/?api=1&destination=134+NW+21st+Ave+Portland+OR+97209" class="btn btn-gold" target="_blank" rel="noopener">Get Directions</a>
         </div>
 
+        <div class="card card-services">
+          <div>
+            <h3>Our Services</h3>
+            <p><strong>Haircut</strong> – $35</p>
+            <p><strong>Beard Trim</strong> – $20</p>
+            <p><strong>Color</strong> – $80+</p>
+            <p><strong>Blonding</strong> – $100+</p>
+          </div>
+          <a class="btn" href="services/">View All Services</a>
+        </div>
+
+        <div class="card card-book">
+          <div>
+            <h3>Book Appointment</h3>
+            <p>Easily schedule your next visit online or call today.</p>
+            <p class="booking-phone"><a href="tel:971-803-7563">971-803-7563</a></p>
+          </div>
+          <a class="btn btn-dark" href="book/">Book Now</a>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <section class="about" id="about">
+  <section class="about team-preview" id="about">
     <h2>Meet Our Team</h2>
     <div class="stylists">
       <div class="stylist">
-        <img src="assets/tracy.jpeg" alt="Stylist Name" />
+        <div class="stylist-photo">
+          <img src="assets/tracy-portrait.webp" alt="Tracy, co-owner and stylist at Timberline Hair Company" width="960" height="960" loading="lazy" decoding="async" />
+        </div>
         <div class="stylist-text">
           <h3>Tracy</h3>
-          <p>Co-owner of Timberline Hair Company! 24 years in the game, starting in a barbershop and leveling up into full-service hair. I'm all about cuts that look sharp when you leave and still make sense when you're styling it yourself. No mystery, no struggle—just good hair that works.</p>
+          <p>Dimensional color, lived-in blondes, and cuts tailored to your style and everyday life.</p>
+          <a class="stylist-read-more" href="stylists/" aria-label="Read Tracy's full bio">Read full bio <span aria-hidden="true">→</span></a>
         </div>
       </div>
       <div class="stylist">
-        <img src="assets/bre.jpeg" alt="Stylist Name" />
+        <div class="stylist-photo">
+          <img src="assets/bre-portrait.webp" alt="Bre, stylist at Timberline Hair Company" width="960" height="960" loading="lazy" decoding="async" />
+        </div>
         <div class="stylist-text">
           <h3>Bre</h3>
-          <p>Co-owner of Timberline Hair Company! I specialize in men's cuts and low-maintenance styles. No one knows your hair better than you do, which is why you and I will have a thorough consultation and open communication throughout the service—so you leave with a cut that truly feels like you.</p>
+          <p>Curly hair of every texture and length, from short barber cuts to creative longer styles.</p>
+          <a class="stylist-read-more" href="stylists/" aria-label="Read Bre's full bio">Read full bio <span aria-hidden="true">→</span></a>
         </div>
       </div>
       <div class="stylist">
-        <img src="assets/percy.jpeg" alt="Stylist Name" />
+        <div class="stylist-photo">
+          <img src="assets/percy-portrait.webp" alt="Percy, stylist at Timberline Hair Company" width="960" height="960" loading="lazy" decoding="async" />
+        </div>
         <div class="stylist-text">
           <h3>Percy</h3>
-          <p>Alternative stylist born and raised in Oregon. I love and specialize in precision cutting, short hair, shags, vivids, patterned hair, color blocking, perms, and all over colors.</p>
+          <p>Precision cuts, short hair, shags, vivids, color blocking, perms, and all-over color.</p>
+          <a class="stylist-read-more" href="stylists/" aria-label="Read Percy's full bio">Read full bio <span aria-hidden="true">→</span></a>
         </div>
       </div>
       <div class="stylist">
-        <img src="assets/rafael.jpeg" alt="Stylist Name" />
+        <div class="stylist-photo">
+          <img src="assets/rafael-portrait.webp" alt="Rafael, stylist at Timberline Hair Company" width="960" height="960" loading="lazy" decoding="async" />
+        </div>
         <div class="stylist-text">
           <h3>Rafael</h3>
-          <p>Haircuts, vivid color, bold looks, clean fades and creative expression. Low-maintenance styles and vivid transformations. We consult, we customize, you leave confident. Shags, sharp cuts and soft chaos hair that behaves…even when you don't.</p>
-          <p>Working for Mojo & Jojo 🐾</p>
+          <p>Bold cuts, clean fades, vivid color, shags, and expressive styles built around you.</p>
+          <a class="stylist-read-more" href="stylists/" aria-label="Read Rafael's full bio">Read full bio <span aria-hidden="true">→</span></a>
         </div>
       </div>
     </div>
   </section>
+
+  <section class="instagram-feature" aria-labelledby="instagram-heading">
+    <div class="instagram-feature-heading">
+      <h2 id="instagram-heading">See what we’ve been creating</h2>
+      <p>A few selections from our Instagram.</p>
+    </div>
+    <div class="instagram-feature-grid">
+      <a class="instagram-post" href="https://www.instagram.com/p/DdrVfPlkx7h/" target="_blank" rel="noopener noreferrer" aria-label="View featured hairstyle 1 on Instagram">
+        <img src="assets/portland-defined-curly-hair.webp" alt="Long curly haircut with defined brown curls" width="800" height="1000" loading="lazy" decoding="async" />
+        <span>View on Instagram <span aria-hidden="true">↗</span></span>
+      </a>
+      <a class="instagram-post" href="https://www.instagram.com/p/DallnusElbs/" target="_blank" rel="noopener noreferrer" aria-label="View featured hairstyle 2 on Instagram">
+        <img src="assets/blond-buzz-cut-red-heart-design.webp" alt="Blond buzz cut with red heart designs" width="800" height="1000" loading="lazy" decoding="async" />
+        <span>View on Instagram <span aria-hidden="true">↗</span></span>
+      </a>
+      <a class="instagram-post" href="https://www.instagram.com/p/DaRUuSSCZeZ/" target="_blank" rel="noopener noreferrer" aria-label="View featured hairstyle 3 on Instagram">
+        <img src="assets/long-dimensional-blonde-waves.webp" alt="Long dimensional blonde waves" width="800" height="1000" loading="lazy" decoding="async" />
+        <span>View on Instagram <span aria-hidden="true">↗</span></span>
+      </a>
+      <a class="instagram-post" href="https://www.instagram.com/p/DXhahYdFJsR/" target="_blank" rel="noopener noreferrer" aria-label="View featured hairstyle 4 on Instagram">
+        <img src="assets/short-textured-cut-and-beard.webp" alt="Short textured haircut and beard" width="800" height="1000" loading="lazy" decoding="async" />
+        <span>View on Instagram <span aria-hidden="true">↗</span></span>
+      </a>
+    </div>
+  </section>
+
+  </main>
 
   <footer>
     <h2 style="margin-top: 0;">Timberline Hair Company</h2>
     <p>134 NW 21st Ave, Portland, OR 97209</p>
-    <p style="margin-bottom: 0;">971-803-7563</p>
+    <p class="footer-phone"><a href="tel:971-803-7563">971-803-7563</a></p>
+    <div class="footer-social" aria-label="Social media">
+      <a href="https://www.instagram.com/timberlinehaircompany/" target="_blank" rel="noopener noreferrer" aria-label="Timberline Hair Company on Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>
+      </a>
+      <a href="https://www.facebook.com/share/1EwiTXxAgz/" target="_blank" rel="noopener noreferrer" aria-label="Timberline Hair Company on Facebook">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M14.2 21v-8.2h2.7l.4-3.2h-3.1v-2c0-.9.3-1.5 1.6-1.5h1.7V3.2c-.3 0-1.4-.2-2.6-.2-2.6 0-4.3 1.6-4.3 4.5v2.1H8v3.2h2.6V21h3.6z"/></svg>
+      </a>
+    </div>
   </footer>
 
 </body>
