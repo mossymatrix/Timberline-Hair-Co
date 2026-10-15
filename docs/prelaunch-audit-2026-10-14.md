@@ -15,7 +15,7 @@ Branch: site-revamp. Publication is on hold pending remaining checks.
 - Internal links use directory URLs consistent with canonicals rather than index.html.
 - Added keyboard skip links, focusable main targets and consistent visible focus indicators.
 - Added branded noindex 404.html with service and booking recovery links.
-- Orange/mustard button text changed to dark text. Calculated normal-state ratios: orange 5.34:1; mustard 7.33:1; green with white 7.64:1. Orange hover lightened to retain dark text legibility.
+- Button contrast change was reverted at the user's request; original white text and orange hover restored. Preserve the chosen appearance.
 - Corrected the homepage introduction's sentence fragment.
 
 ## Remaining before publication
@@ -28,3 +28,12 @@ Branch: site-revamp. Publication is on hold pending remaining checks.
 
 ## After publication
 Verify all page HTTP status codes, live canonicals, custom 404 status, robots/sitemap delivery, HTTPS redirects, booking and success redirect. Submit sitemap and inspect public pages in Search Console. Exclude success/404 from indexing.
+
+## Page-speed source review
+- Added preconnect hints for use.typekit.net and p.typekit.net on all six authored pages.
+- Homepage references 889,756 bytes of images in total; 206,008 bytes are the eager logo and hero, with the remaining images lazy-loaded. Lazy-loading behavior depends on viewport proximity.
+- Stylists page references 340,320 bytes of images, including the 52,280-byte eager logo; portraits are lazy-loaded.
+- Services, Contact, Book and Success each reference only the 52,280-byte logo before external assets.
+- Shared CSS, Adobe Fonts, and on Book the Vagaro loader/frame are additional costs, not included in these image totals.
+- A local browser benchmark could not run because the Chromium download failed. No Lighthouse score, LCP, CLS, INP or network waterfall was measured. Preconnect benefit has not been benchmarked.
+- Next: obtain a reachable site-revamp preview URL and run mobile/desktop PageSpeed Insights, especially Home, Stylists and Book. Do not use the current production homepage score to represent the unpublished revamp.
